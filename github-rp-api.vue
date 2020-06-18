@@ -27,18 +27,21 @@ export default {
       const ex = {
         title: "Amazing new feature",
         body: "Please pull these awesome changes in!",
-        head: "octocat:new-feature",
+        head: "pr-api",
         base: "master"
       };
-      fetch(`https://api.github.com/repos/${this.repo}/pulls`, {
+      fetch(`https://api.github.com/repos/Dragonfly161518/playgrounded/pulls`, {
         method: "post",
+        headers: new Headers({
+          Authorization: "token 59397e3302c7514b99872536b87a620ddf9a84ea"
+        }),
         body: JSON.stringify(ex)
       })
         .then(function(response) {
           console.log(response.json());
         })
         .then(function(data) {
-          console.log("Created:", data.html_url);
+          console.log("Created:", data);
         })
         .catch(function(e) {
           console.log("error", e);
