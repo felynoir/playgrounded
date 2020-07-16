@@ -25,7 +25,7 @@ export default {
   methods: {
     makePR: async () => {
       const ex = {
-        title: "Amazing new feature",
+        title: "Amazing new feature #2",
         body: "Please pull these awesome changes in!",
         head: "pr-api",
         base: "master"
@@ -33,7 +33,7 @@ export default {
       fetch(`https://api.github.com/repos/Dragonfly161518/playgrounded/pulls`, {
         method: "post",
         headers: new Headers({
-          Authorization: "token 59397e3302c7514b99872536b87a620ddf9a84ea"
+          Authorization: "token 9327198e278fb3345cb9cf3e90d40e393b31a6f6"
         }),
         body: JSON.stringify(ex)
       })
