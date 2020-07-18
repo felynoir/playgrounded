@@ -6,7 +6,9 @@
   "dependencies": {
     "xlsx": "^0.16.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^1.5.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
