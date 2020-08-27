@@ -1,5 +1,9 @@
 node_modules
+<<<<<<< HEAD
 inf.json
 inf.xlsx
 
 output.css
+=======
+.env
+>>>>>>> pr-api
