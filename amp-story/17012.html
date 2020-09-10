@@ -89,9 +89,9 @@
       amp-story-page {
         background-color: #000;
       }
-      h1 {
+      h2 {
         font-weight: bold;
-        font-size: 2.875em;
+        font-size: 1.875em;
         font-weight: normal;
         line-height: 1.174;
         color: #000;
@@ -125,6 +125,10 @@
         background-color: #000;
         line-height: 2em;
       }
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -148,7 +152,16 @@
           </amp-video>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
-          <h1>Firework</h1>
+          <h2>
+            <a
+              href="https://firework-platform.web.app"
+              role="link"
+              data-tooltip-icon="./assets/ic_amp_googblue_1x_web_24dp.png"
+              data-tooltip-text="Go to page"
+            >
+              Firework</a
+            >
+          </h2>
         </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="fresh2home">
@@ -164,7 +177,16 @@
           </amp-video>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
-          <h1>Fesh2Home</h1>
+          <h2>
+            <a
+              href="https://fresh-2-home.web.app"
+              role="link"
+              data-tooltip-icon="./assets/ic_amp_googblue_1x_web_24dp.png"
+              data-tooltip-text="Go to page"
+            >
+              Fesh2Home</a
+            >
+          </h2>
         </amp-story-grid-layer>
       </amp-story-page>
     </amp-story>
