@@ -81,11 +81,6 @@
       href="https://fonts.googleapis.com/css?family=Oswald:200,300,400"
       rel="stylesheet"
     />
-    <script
-      async
-      custom-element="amp-story"
-      src="https://cdn.ampproject.org/v0/amp-story-1.0.js"
-    ></script>
     <style amp-custom>
       amp-story {
         font-family: "Oswald", sans-serif;
@@ -99,6 +94,7 @@
         font-size: 2.875em;
         font-weight: normal;
         line-height: 1.174;
+        color: #000;
       }
       p {
         font-weight: normal;
@@ -134,32 +130,41 @@
   <body>
     <amp-story
       standalone
-      title="Joy of Pets"
-      publisher="AMP tutorials"
+      title="Nattapat"
+      publisher="17012"
       publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
       poster-portrait-src="assets/cover.jpg"
     >
-      <amp-story-page id="cover"
-        ><amp-story-grid-layer template="fill">
+      <amp-story-page id="cover">
+        <amp-story-grid-layer template="fill">
           <amp-video
             autoplay
             loop
             width="720"
             height="1280"
-            poster="assets/rabbit.jpg"
             layout="responsive"
           >
-            <source src="assets/firework.webm" type="video/mp4" />
+            <source src="assets/firework.mp4" type="video/mp4" />
           </amp-video>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical">
-          <h1>Rabbits</h1>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <h1>Firework</h1>
+        </amp-story-grid-layer>
+      </amp-story-page>
+      <amp-story-page id="fresh2home">
+        <amp-story-grid-layer template="fill">
+          <amp-video
+            autoplay
+            loop
+            width="720"
+            height="1280"
+            layout="responsive"
+          >
+            <source src="assets/fresh2home.mp4" type="video/mp4" />
+          </amp-video>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
-          <p>
-            Rabbits can learn to follow simple voice commands and come when
-            called by name, and are curious and playful.
-          </p>
+          <h1>Fesh2Home</h1>
         </amp-story-grid-layer>
       </amp-story-page>
     </amp-story>
